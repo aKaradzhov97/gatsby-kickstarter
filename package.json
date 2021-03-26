@@ -5,9 +5,7 @@
   "version": "0.1.0",
   "author": "aKaradzhov97",
   "dependencies": {
-    "@types/react": "^17.0.3",
-    "@types/react-dom": "^17.0.3",
-    "@types/react-helmet": "^6.1.0",
+    "@loadable/component": "^5.14.1",
     "gatsby": "^3.1.2",
     "gatsby-plugin-canonical-urls": "^3.1.0",
     "gatsby-plugin-google-analytics": "^3.1.0",
@@ -28,7 +26,11 @@
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.2.1"
+    "prettier": "2.2.1",
+    "@types/loadable__component": "^5.13.3",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-helmet": "^6.1.0"
   },
   "keywords": [
     "gatsby"
