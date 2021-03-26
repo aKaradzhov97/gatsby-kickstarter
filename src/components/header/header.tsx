@@ -5,7 +5,7 @@ interface IHeaderProps {
   siteTitle: string,
 }
 
-export const Header = ({ siteTitle }: IHeaderProps) => (
+const Header = ({ siteTitle }: IHeaderProps) => (
   <header
     style={{
       background: `rebeccapurple`,
@@ -33,3 +33,5 @@ export const Header = ({ siteTitle }: IHeaderProps) => (
     </div>
   </header>
 );
+
+export default Header;

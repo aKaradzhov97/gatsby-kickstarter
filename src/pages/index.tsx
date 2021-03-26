@@ -3,7 +3,7 @@ import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FormattedMessage } from 'gatsby-plugin-intl';
 import { Layout } from '../components/layout';
-import { SEO } from '../components/seo';
+import { SEO } from '../components/SEO/seo';
 
 const IndexPage = () => (
   <Layout>
@@ -23,7 +23,6 @@ const IndexPage = () => (
     />
     <p>
       <Link to="/page-2/">Go to page 2</Link> <br />
-      <Link to="/using-typescript/">Go to "Using TypeScript"</Link>
     </p>
   </Layout>
 );

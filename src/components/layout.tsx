@@ -1,7 +1,11 @@
-import * as React from 'react';
+import React, { lazy, Suspense } from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Header } from './header';
+import { Spinner } from './spinner/spinner';
 import './layout.css';
+
+const Header = lazy(() => import('./header/header'));
+
+const Fallback = () => <Spinner/>;
 
 interface ILayoutProps {
   children: React.ReactElement | React.ReactElement[];
@@ -23,7 +27,7 @@ export const Layout = ({ children }: ILayoutProps) => {
   } = site;
 
   return (
-    <>
+    <Suspense fallback={Fallback()}>
       <Header siteTitle={siteTitle || 'Title'} />
       <div
         style={{
@@ -43,6 +47,6 @@ export const Layout = ({ children }: ILayoutProps) => {
           <a href="https://www.gatsbyjs.com">Gatsby</a>
         </footer>
       </div>
-    </>
+    </Suspense>
   );
 };

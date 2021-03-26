@@ -6,7 +6,7 @@ const config = {
   siteTitleAlt: `${title} - the one and only!`, // Alternative site title for SEO.
   siteTitleTemplate: `%s | ${title}`,
   logo: '/path/to/logo.png', // Logo used for SEO and manifest.
-  siteUrl: 'https://www.example.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://gatsby-kickstarter-ak.netlify.app', // Domain of your website without pathPrefix.
   siteDescription: `${title} - the biggest leader in area of creativity!`, // Website description used for RSS feeds/meta description tag.
   robots: 'index,follow',
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
