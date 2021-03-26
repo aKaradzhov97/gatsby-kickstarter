@@ -6,7 +6,7 @@ const config = {
   siteTitleAlt: `${title} - the one and only!`, // Alternative site title for SEO.
   siteTitleTemplate: `%s | ${title}`,
   logo: '/path/to/logo.png', // Logo used for SEO and manifest.
-  url: 'https://www.example.com', // Domain of your website without pathPrefix.
+  siteUrl: 'https://www.example.com', // Domain of your website without pathPrefix.
   siteDescription: `${title} - the biggest leader in area of creativity!`, // Website description used for RSS feeds/meta description tag.
   robots: 'index,follow',
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
@@ -25,8 +25,8 @@ if (config.pathPrefix === '/') {
 }
 
 // Make sure url doesn't have an ending forward slash
-if (config.url.substr(-1) === '/') {
-  config.url = config.url.slice(0, -1);
+if (config.siteUrl.substr(-1) === '/') {
+  config.siteUrl = config.siteUrl.slice(0, -1);
 }
 
 module.exports = {
@@ -37,7 +37,7 @@ module.exports = {
     siteTitleTemplate: config.siteTitleTemplate,
     siteDescription: config.siteDescription,
     robots: config.robots,
-    url: config.url,
+    siteUrl: config.siteUrl,
   },
   plugins: [
     {
@@ -91,15 +91,15 @@ module.exports = {
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
-        host: config.url,
-        sitemap: `${config.url}/sitemap.xml`,
+        host: config.siteUrl,
+        sitemap: `${config.siteUrl}/sitemap.xml`,
         policy: [{ userAgent: '*', allow: '/' }],
       },
     },
     {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
-        siteUrl: config.url,
+        siteUrl: config.siteUrl,
         // stripQueryString: true,
       },
     },
