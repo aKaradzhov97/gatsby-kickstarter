@@ -1,0 +1,44 @@
+{
+  "name": "gatsby-kickstart",
+  "private": true,
+  "description": "Gatsby project, optimized for performance & SEO.",
+  "version": "0.1.0",
+  "author": "aKaradzhov97",
+  "dependencies": {
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.3",
+    "@types/react-helmet": "^6.1.0",
+    "gatsby": "^3.1.2",
+    "gatsby-plugin-canonical-urls": "^3.1.0",
+    "gatsby-plugin-google-analytics": "^3.1.0",
+    "gatsby-plugin-image": "^1.1.1",
+    "gatsby-plugin-intl": "^0.3.3",
+    "gatsby-plugin-manifest": "^3.1.0",
+    "gatsby-plugin-offline": "^4.1.0",
+    "gatsby-plugin-react-helmet": "^4.1.0",
+    "gatsby-plugin-robots-txt": "^1.5.5",
+    "gatsby-plugin-sharp": "^3.1.2",
+    "gatsby-plugin-sitemap": "^3.1.0",
+    "gatsby-plugin-split-css": "^2.0.0",
+    "gatsby-plugin-typescript": "^3.1.0",
+    "gatsby-source-filesystem": "^3.1.0",
+    "gatsby-transformer-sharp": "^3.1.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  },
+  "keywords": [
+    "gatsby"
+  ],
+  "license": "0BSD",
+  "scripts": {
+    "start": "gatsby clean && gatsby develop",
+    "build": "gatsby build",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,scss}\"",
+    "serve": "gatsby serve",
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+  }
+}
