@@ -54,6 +54,14 @@ module.exports = {
     'gatsby-plugin-sharp',
     'gatsby-plugin-sitemap',
     {
+      resolve: 'gatsby-plugin-intl',
+      options: {
+        path: `${__dirname}/src/intl`,
+        languages: ['bg-bg', 'en-us'],
+        defaultLanguage: 'bg-bg'
+      },
+    },
+    {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
