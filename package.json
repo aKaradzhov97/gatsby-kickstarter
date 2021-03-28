@@ -10,7 +10,6 @@
     "gatsby-plugin-canonical-urls": "^3.1.0",
     "gatsby-plugin-google-analytics": "^3.1.0",
     "gatsby-plugin-image": "^1.1.1",
-    "gatsby-plugin-intl": "^0.3.3",
     "gatsby-plugin-manifest": "^3.1.0",
     "gatsby-plugin-offline": "^4.1.0",
     "gatsby-plugin-react-helmet": "^4.1.0",
@@ -21,16 +20,17 @@
     "gatsby-plugin-typescript": "^3.1.0",
     "gatsby-source-filesystem": "^3.1.0",
     "gatsby-transformer-sharp": "^3.1.0",
+    "patch-package": "^6.4.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "prettier": "2.2.1",
     "@types/loadable__component": "^5.13.3",
     "@types/react": "^17.0.3",
     "@types/react-dom": "^17.0.3",
-    "@types/react-helmet": "^6.1.0"
+    "@types/react-helmet": "^6.1.0",
+    "prettier": "^2.2.1"
   },
   "keywords": [
     "gatsby"
@@ -41,6 +41,7 @@
     "build": "gatsby build",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json,md,scss}\"",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "postinstall": "patch-package"
   }
 }

@@ -1,9 +1,7 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import loadable from '@loadable/component';
+import { Header } from './header/header'
 import './layout.css';
-
-const Header = loadable(() => import('./header/header'));
 
 interface ILayoutProps {
   children: React.ReactElement | React.ReactElement[];
