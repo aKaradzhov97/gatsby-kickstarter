@@ -1,7 +1,8 @@
 import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { Header } from './header/header'
 import './layout.css';
+import { Header } from '../header/header';
+import { Footer } from '../footer/footer';
 
 interface ILayoutProps {
   children: React.ReactElement | React.ReactElement[];
@@ -33,15 +34,7 @@ export const Layout = ({ children }: ILayoutProps) => {
     }}
   >
     <main>{children}</main>
-    <footer
-      style={{
-        marginTop: `2rem`,
-      }}
-    >
-      © {new Date().getFullYear()}, Built with
-      {` `}
-      <a href="https://www.gatsbyjs.com">Gatsby</a>
-    </footer>
+    <Footer/>
   </div>
 </>
   );

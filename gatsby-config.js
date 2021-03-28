@@ -1,4 +1,4 @@
-const title = 'Gatsby Kickstart';
+const title = 'Gatsby Kickstart AK';
 
 const config = {
   siteTitle: title, // Site title.
@@ -8,7 +8,7 @@ const config = {
   logo: '/path/to/logo.png', // Logo used for SEO and manifest.
   siteUrl: 'https://gatsby-kickstarter-ak.netlify.app', // Domain of your website without pathPrefix.
   siteDescription: `${title} - the biggest leader in area of creativity!`, // Website description used for RSS feeds/meta description tag.
-  robots: 'index,follow',
+  siteRobots: 'index,follow',
   pathPrefix: '/', // Prefixes all links. For cases when deployed to example.github.io/gatsby-advanced-starter/.
   googleAnalyticsID: 'UA-111111111-1', // GA tracking ID.
   themeColor: '#663399', // Used for setting manifest and progress theme colors.
@@ -36,7 +36,7 @@ module.exports = {
     siteTitleAlt: config.siteTitleAlt,
     siteTitleTemplate: config.siteTitleTemplate,
     siteDescription: config.siteDescription,
-    robots: config.robots,
+    siteRobots: config.siteRobots,
     siteUrl: config.siteUrl,
   },
   plugins: [

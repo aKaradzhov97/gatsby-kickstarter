@@ -8,7 +8,6 @@ interface ISEOProps {
   description?: string;
   robots?: string;
   meta?: {}[];
-  lang?: string;
 }
 
 export const SEO = ({
@@ -16,7 +15,6 @@ export const SEO = ({
   titleTemplate,
   description,
   robots,
-  lang,
 }: ISEOProps) => {
   const { site } = useStaticQuery(
     graphql`
@@ -26,7 +24,7 @@ export const SEO = ({
             siteTitle
             siteTitleTemplate
             siteDescription
-            robots
+            siteRobots
           }
         }
       }
@@ -68,9 +66,6 @@ export const SEO = ({
 
   return (
     <Helmet
-      htmlAttributes={{
-        lang: lang ? lang : 'bg-BG',
-      }}
       title={metaTitle}
       titleTemplate={metaTitleTemplate}
       meta={[

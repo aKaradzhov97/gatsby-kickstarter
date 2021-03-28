@@ -2,8 +2,8 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { StaticImage } from 'gatsby-plugin-image';
 import { FormattedMessage } from 'gatsby-plugin-intl';
-import { Layout } from '../components/layout';
-import { SEO } from '../components/SEO/seo';
+import { Layout } from '../components/layout/layout';
+import { SEO } from '../components/seo/seo';
 
 const IndexPage = () => (
   <Layout>
@@ -11,8 +11,12 @@ const IndexPage = () => (
     <h1>
       <FormattedMessage id="home.greeting" />
     </h1>
-    <p>Welcome to your new Gatsby site.</p>
-    <p>Now go build something great.</p>
+    <p>
+      <FormattedMessage id="home.welcome" />
+    </p>
+    <p>
+      <FormattedMessage id="home.start_building" />
+    </p>
     <StaticImage
       src="../images/gatsby-astronaut.png"
       loading="eager"

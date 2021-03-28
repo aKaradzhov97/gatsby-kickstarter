@@ -1,5 +1,7 @@
 {
   "home": {
-    "greeting": "Hello, people!"
+    "greeting": "Hello, people!",
+    "welcome": "Welcome to your new Gatsby site.",
+    "start_building": "Now go build something great."
   }
 }
